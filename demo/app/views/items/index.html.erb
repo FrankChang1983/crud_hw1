@@ -1,0 +1,23 @@
+<h1> Item List Time.now </h1>
+
+<table>
+ <% @items=Item.each do |i| %>
+  <caption>items</caption>
+  <thead>
+    <tr>
+      <th>albums</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+         <%= i.name %>
+      </td>
+      <td>
+      <%=i.description%>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<%= paginate @items %>
