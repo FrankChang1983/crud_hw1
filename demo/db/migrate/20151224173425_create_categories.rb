@@ -4,5 +4,6 @@ class CreateCategories < ActiveRecord::Migration
       t.string :name
       t.timestamps null: false
     end
+    add_index :topics, :category_id
   end
 end
