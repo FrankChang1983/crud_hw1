@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20151217094226) do
     t.integer  "price"
     t.date     "deadline"
     t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "updated_at",  null: true
   end
 
 end

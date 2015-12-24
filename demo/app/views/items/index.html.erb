@@ -1,11 +1,20 @@
-<h1> Item List Time.now </h1>
+<%= Time.now  %>
+<div class="hearder"><h1>Step-Out Forum</h1></div>
+
+
+
 
 <table>
- <% @items=Item.each do |i| %>
-  <caption>items</caption>
+ <% @items.each do |i| %>
+  <caption></caption>
   <thead>
     <tr>
-      <th>albums</th>
+      <th>名稱</th>
+      <th>描述</th>
+      <th>製造日期</th>
+      <th>價格 </th>
+      <th>截止日期</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -14,10 +23,22 @@
          <%= i.name %>
       </td>
       <td>
-      <%=i.description%>
+         <%=i.description%>
       </td>
+      <td>
+         <%=i.released%>
+      </td>
+      <td>
+         <%=i.price%>-USD
+      </td>
+      <td>
+        <%=i.deadline%>
+      </td>
+      <td>
+      </td>
+
     </tr>
   </tbody>
+  <% end%>
 </table>
 
-<%= paginate @items %>

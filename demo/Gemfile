@@ -13,11 +13,16 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'kaminari'
 
+gem 'devise'
+
+# gem 'faker'
+
 gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'pg'
 
 gem 'rails_12factor', group: :production
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
